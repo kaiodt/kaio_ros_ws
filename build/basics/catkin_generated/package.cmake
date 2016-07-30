@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "basics")
-set(basics_VERSION "0.0.0")
-set(basics_MAINTAINER "kaiodt <kaiodt@todo.todo>")
+set(basics_VERSION "0.1.0")
+set(basics_MAINTAINER "Kaio Douglas <kaiodtr@gmail.com>")
 set(basics_PACKAGE_FORMAT "1")
 set(basics_BUILD_DEPENDS "message_generation" "rospy" "std_msgs" "actionlib_msgs")
 set(basics_BUILD_EXPORT_DEPENDS "rospy" "std_msgs" "message_runtime" "actionlib_msgs")
