@@ -1,0 +1,8 @@
+prefix=/home/kaiodt/kaio_ros_ws/install
+
+Name: followbot
+Description: Description of followbot
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/kaiodt/kaio_ros_ws/install/lib 
+Requires: 
