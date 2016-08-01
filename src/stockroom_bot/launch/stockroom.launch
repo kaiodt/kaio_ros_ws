@@ -1,0 +1,28 @@
+<launch>
+	
+	<!--World-->	
+	<include file="$(find gazebo_ros)/launch/empty_world.launch">
+		<arg name="world_name" value="$(find stockroom_bot)/worlds/aisle.world"/>
+	</include>
+
+	<!--Robot-->
+	<include file="$(find fetch_gazebo)/launch/include/fetch.launch.xml"/>
+
+	<!--Products-->
+	<node pkg="stockroom_bot" name="stock_products" type="stock_products.py"/>
+
+	<!--MoveIt-->
+	<include file="$(find fetch_moveit_config)/launch/move_group.launch"/>
+
+	<!--Navigation Stack-->
+	<include file="$(find fetch_navigation)/launch/fetch_nav.launch">
+		<arg name="map_file" value="$(find stockroom_bot)/map.yaml"/>
+	</include>
+
+	<!--Initial Pose-->
+	<node pkg="stockroom_bot" name="initial_locatilation" type="initial_localization.py"/>
+
+	<!--ALVAR Tags Transformations-->	
+	<include file="$(find stockroom_bot)/launch/markers.launch"/>
+
+</launch>

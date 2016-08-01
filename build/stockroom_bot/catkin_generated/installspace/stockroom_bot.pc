@@ -1,0 +1,8 @@
+prefix=/home/kaiodt/kaio_ros_ws/install
+
+Name: stockroom_bot
+Description: Description of stockroom_bot
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/kaiodt/kaio_ros_ws/install/lib 
+Requires: 

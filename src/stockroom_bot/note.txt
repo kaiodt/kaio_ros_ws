@@ -1,0 +1,4 @@
+Add this alias to ~/.bashrc
+
+alias sb='source ~/kaio_ros_ws/devel/setup.bash; \
+export GAZEBO_MODEL_PATH=${HOME}/kaio_ros_ws/src/stockroom_bot'
