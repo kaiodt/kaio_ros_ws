@@ -118,9 +118,11 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/kaiodt/kaio_ros_ws/build/gtest/cmake_install.cmake")
   INCLUDE("/home/kaiodt/kaio_ros_ws/build/basics/cmake_install.cmake")
+  INCLUDE("/home/kaiodt/kaio_ros_ws/build/sensor_actuator/cmake_install.cmake")
   INCLUDE("/home/kaiodt/kaio_ros_ws/build/stockroom_bot/cmake_install.cmake")
   INCLUDE("/home/kaiodt/kaio_ros_ws/build/patrolbot/cmake_install.cmake")
   INCLUDE("/home/kaiodt/kaio_ros_ws/build/followbot/cmake_install.cmake")
+  INCLUDE("/home/kaiodt/kaio_ros_ws/build/tortoisebot/cmake_install.cmake")
   INCLUDE("/home/kaiodt/kaio_ros_ws/build/wanderbot/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)

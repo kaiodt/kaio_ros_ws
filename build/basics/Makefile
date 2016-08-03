@@ -374,6 +374,20 @@ basics_generate_messages_cpp/fast:
 .PHONY : basics_generate_messages_cpp/fast
 
 # Convenience name for target.
+basics/CMakeFiles/basics_generate_messages_eus.dir/rule:
+	cd /home/kaiodt/kaio_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 basics/CMakeFiles/basics_generate_messages_eus.dir/rule
+.PHONY : basics/CMakeFiles/basics_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+basics_generate_messages_eus: basics/CMakeFiles/basics_generate_messages_eus.dir/rule
+.PHONY : basics_generate_messages_eus
+
+# fast build rule for target.
+basics_generate_messages_eus/fast:
+	cd /home/kaiodt/kaio_ros_ws/build && $(MAKE) -f basics/CMakeFiles/basics_generate_messages_eus.dir/build.make basics/CMakeFiles/basics_generate_messages_eus.dir/build
+.PHONY : basics_generate_messages_eus/fast
+
+# Convenience name for target.
 basics/CMakeFiles/basics_generate_messages_lisp.dir/rule:
 	cd /home/kaiodt/kaio_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 basics/CMakeFiles/basics_generate_messages_lisp.dir/rule
 .PHONY : basics/CMakeFiles/basics_generate_messages_lisp.dir/rule
@@ -400,6 +414,20 @@ basics_generate_messages_py: basics/CMakeFiles/basics_generate_messages_py.dir/r
 basics_generate_messages_py/fast:
 	cd /home/kaiodt/kaio_ros_ws/build && $(MAKE) -f basics/CMakeFiles/basics_generate_messages_py.dir/build.make basics/CMakeFiles/basics_generate_messages_py.dir/build
 .PHONY : basics_generate_messages_py/fast
+
+# Convenience name for target.
+basics/CMakeFiles/basics_geneus.dir/rule:
+	cd /home/kaiodt/kaio_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 basics/CMakeFiles/basics_geneus.dir/rule
+.PHONY : basics/CMakeFiles/basics_geneus.dir/rule
+
+# Convenience name for target.
+basics_geneus: basics/CMakeFiles/basics_geneus.dir/rule
+.PHONY : basics_geneus
+
+# fast build rule for target.
+basics_geneus/fast:
+	cd /home/kaiodt/kaio_ros_ws/build && $(MAKE) -f basics/CMakeFiles/basics_geneus.dir/build.make basics/CMakeFiles/basics_geneus.dir/build
+.PHONY : basics_geneus/fast
 
 # Convenience name for target.
 basics/CMakeFiles/basics_genlisp.dir/rule:
@@ -493,8 +521,10 @@ help:
 	@echo "... basics_gencpp"
 	@echo "... basics_generate_messages"
 	@echo "... basics_generate_messages_cpp"
+	@echo "... basics_generate_messages_eus"
 	@echo "... basics_generate_messages_lisp"
 	@echo "... basics_generate_messages_py"
+	@echo "... basics_geneus"
 	@echo "... basics_genlisp"
 	@echo "... basics_genpy"
 	@echo "... edit_cache"

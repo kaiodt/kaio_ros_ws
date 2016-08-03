@@ -7,6 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH="/opt/ros/indigo/lib/x86_64-linux-gnu:/home/kaiodt/chessbot/devel/lib:/home/kaiodt/kaio_ros_ws/devel/lib:/home/kaiodt/wanderbot_ws/devel/lib:/opt/ros/indigo/lib"
+export LD_LIBRARY_PATH="/opt/ros/indigo/share/euslisp/jskeus/eus//Linux64/lib:/opt/ros/indigo/lib/x86_64-linux-gnu:/opt/ros/indigo/share/euslisp/jskeus/eus//Linux64/lib:/home/kaiodt/chessbot/devel/lib:/home/kaiodt/kaio_ros_ws/devel/lib:/home/kaiodt/wanderbot_ws/devel/lib:/opt/ros/indigo/share/euslisp/jskeus/eus//Linux64/lib:/opt/ros/indigo/lib"
+export PATH="/opt/ros/indigo/share/euslisp/jskeus/eus//Linux64/bin:/opt/ros/indigo/bin:/opt/ros/indigo/share/euslisp/jskeus/eus//Linux64/bin:/opt/ros/indigo/share/euslisp/jskeus/eus//Linux64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 export PKG_CONFIG_PATH="/opt/ros/indigo/lib/x86_64-linux-gnu/pkgconfig:/home/kaiodt/chessbot/devel/lib/pkgconfig:/home/kaiodt/kaio_ros_ws/devel/lib/pkgconfig:/home/kaiodt/wanderbot_ws/devel/lib/pkgconfig:/opt/ros/indigo/lib/pkgconfig"
 export PWD="/home/kaiodt/kaio_ros_ws/build"

@@ -1,0 +1,30 @@
+1. ROS Message Interface
+	- Movement of the whole mobile base
+	- Send velocity commands to the mobile base: geometry_msgs/Twist (/cmd_vel topic)
+	- Read from encoders (odometry): nav_msgs/Odometry (/odom topic)
+	- A node communicates with the base using these messages types
+
+2. Hardware Drivers
+	2.1. Actuation
+		- A node to receive the velocity commands (via /cmd_vel topic)
+		- Figure out the velocities of each wheel (motor), based on the robot's driving mechanism
+		- Send the calculated velocities to the actual motors or an intermediate driver (see the communication protocol)
+
+	2.2. Sensors
+		- A node to receive raw/pre-processed data from the sensor (encoder)
+		- Figure out the pose and velocity of the base, based on the robot's driving mechanism
+		- Translate the data to interface with ROS - generate a nav_msg/Odometry message
+		- Publish to the /odom topic
+
+3. Modeling the Robot: URDF
+	- Write down a model of the robot's kinematics
+	- This model can be used by rviz and gazebo for visualization/simulation purposes
+	- It is also used by tools such as the navigation stack
+
+	- The robot components are described in a tree-like structure
+	- A LINK is a rigid body, such as a chassis or wheel
+	- A JOINT connects to LINKs, defining how they can move with respect to each other
+
+	- The URDF model is loaded to ROS parameter server under the name /robot_description
+
+* Figure out how to make custom hardware to publish joint states using sensor_msgs/JointState messages

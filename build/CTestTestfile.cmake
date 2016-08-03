@@ -6,7 +6,9 @@
 # testing this directory and lists subdirectories to be tested as well.
 SUBDIRS(gtest)
 SUBDIRS(basics)
+SUBDIRS(sensor_actuator)
 SUBDIRS(stockroom_bot)
 SUBDIRS(patrolbot)
 SUBDIRS(followbot)
+SUBDIRS(tortoisebot)
 SUBDIRS(wanderbot)

@@ -1,0 +1,40 @@
+<launch>
+	<!-- Load the TortoiseBot URDF model into the parameter server -->
+	<param name="robot_description" textfile="$(find tortoisebot)/tortoisebot.urdf"/>
+
+	<!-- Start Gazebo with an empty world 
+	<include file="$(find gazebo_ros)/launch/empty_world.launch"/> -->
+
+	<!-- Start Gazebo with the Willow Garage world -->
+	<include file="$(find gazebo_ros)/launch/willowgarage_world.launch"/>
+
+	<!-- Spawn a TortoiseBot in Gazebo, taking the description from the parameter server -->
+	<node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"
+			  args="-param robot_description -urdf -model tortoisebot -x 8 -y -8" />
+
+	<!-- Start the robot_state_publisher node, to publish the joint states -->
+	<node name="robot_state_publisher" pkg="robot_state_publisher"
+		  type="robot_state_publisher"/>
+
+	<!-- Start the map_server node, to provide the map for navigation -->
+	<node name="map_server" pkg="map_server" type="map_server"
+		  args="$(find tortoisebot)/maps/willow.yaml"/>
+
+	<!-- Launch the amcl differential drive locatization system -->
+	<include file="$(find amcl)/examples/amcl_diff.launch"/>
+
+	<!-- Start the move_base node, to allow for path planning -->
+	<node name="move_base" pkg="move_base" type="move_base"
+		    respawn="false" output="screen">
+		<rosparam file="$(find tortoisebot)/move_base_params/costmap_common_params.yaml"
+							command="load" ns="global_costmap" />
+		<rosparam file="$(find tortoisebot)/move_base_params/costmap_common_params.yaml"
+							command="load" ns="local_costmap" />
+		<rosparam file="$(find tortoisebot)/move_base_params/local_costmap_params.yaml"
+							command="load" />
+		<rosparam file="$(find tortoisebot)/move_base_params/global_costmap_params.yaml"
+							command="load" />
+		<rosparam file="$(find tortoisebot)/move_base_params/base_local_planner_params.yaml"
+							command="load" />
+	</node>
+</launch>

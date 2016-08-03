@@ -145,7 +145,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(basics_EXPORTED_TARGETS "basics_generate_messages_cpp;basics_generate_messages_lisp;basics_generate_messages_py")
+set(basics_EXPORTED_TARGETS "basics_generate_messages_cpp;basics_generate_messages_eus;basics_generate_messages_lisp;basics_generate_messages_py")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${basics_EXPORTED_TARGETS})
   if(NOT TARGET ${t})

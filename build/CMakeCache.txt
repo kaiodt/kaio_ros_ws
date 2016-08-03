@@ -293,6 +293,9 @@ gazebo_ros_DIR:PATH=/opt/ros/indigo/share/gazebo_ros/cmake
 //The directory containing a CMake configuration file for gencpp.
 gencpp_DIR:PATH=/opt/ros/indigo/share/gencpp/cmake
 
+//The directory containing a CMake configuration file for geneus.
+geneus_DIR:PATH=/opt/ros/indigo/share/geneus/cmake
+
 //The directory containing a CMake configuration file for genlisp.
 genlisp_DIR:PATH=/opt/ros/indigo/share/genlisp/cmake
 
@@ -378,6 +381,12 @@ rospy_DIR:PATH=/opt/ros/indigo/share/rospy/cmake
 //The directory containing a CMake configuration file for rostime.
 rostime_DIR:PATH=/opt/ros/indigo/share/rostime/cmake
 
+//Value Computed by CMake
+sensor_actuator_BINARY_DIR:STATIC=/home/kaiodt/kaio_ros_ws/build/sensor_actuator
+
+//Value Computed by CMake
+sensor_actuator_SOURCE_DIR:STATIC=/home/kaiodt/kaio_ros_ws/src/sensor_actuator
+
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/indigo/share/sensor_msgs/cmake
 
@@ -407,6 +416,12 @@ tf2_ros_DIR:PATH=/opt/ros/indigo/share/tf2_ros/cmake
 
 //The directory containing a CMake configuration file for tf.
 tf_DIR:PATH=/opt/ros/indigo/share/tf/cmake
+
+//Value Computed by CMake
+tortoisebot_BINARY_DIR:STATIC=/home/kaiodt/kaio_ros_ws/build/tortoisebot
+
+//Value Computed by CMake
+tortoisebot_SOURCE_DIR:STATIC=/home/kaiodt/kaio_ros_ws/src/tortoisebot
 
 //The directory containing a CMake configuration file for trajectory_msgs.
 trajectory_msgs_DIR:PATH=/opt/ros/indigo/share/trajectory_msgs/cmake
@@ -522,7 +537,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=7
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=9
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
