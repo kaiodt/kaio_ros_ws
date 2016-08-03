@@ -6,6 +6,8 @@
 # testing this directory and lists subdirectories to be tested as well.
 SUBDIRS(gtest)
 SUBDIRS(basics)
+SUBDIRS(cougarbot)
+SUBDIRS(cougarbot_moveit_config)
 SUBDIRS(sensor_actuator)
 SUBDIRS(stockroom_bot)
 SUBDIRS(patrolbot)
