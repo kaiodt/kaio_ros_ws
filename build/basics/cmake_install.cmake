@@ -41,7 +41,10 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/basics/action" TYPE FILE FILES "/home/kaiodt/kaio_ros_ws/src/basics/action/Timer.action")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/basics/action" TYPE FILE FILES
+    "/home/kaiodt/kaio_ros_ws/src/basics/action/Timer.action"
+    "/home/kaiodt/kaio_ros_ws/src/basics/action/Talk.action"
+    )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -53,6 +56,18 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerGoal.msg"
     "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerResult.msg"
     "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerFeedback.msg"
+    )
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/basics/msg" TYPE FILE FILES
+    "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkAction.msg"
+    "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionGoal.msg"
+    "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionResult.msg"
+    "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionFeedback.msg"
+    "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg"
+    "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg"
+    "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

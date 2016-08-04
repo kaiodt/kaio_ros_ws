@@ -4,10 +4,17 @@ FILE(REMOVE_RECURSE
   "/home/kaiodt/kaio_ros_ws/devel/include/basics/TimerActionFeedback.h"
   "/home/kaiodt/kaio_ros_ws/devel/include/basics/TimerActionResult.h"
   "/home/kaiodt/kaio_ros_ws/devel/include/basics/TimerAction.h"
+  "/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkActionFeedback.h"
+  "/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkActionResult.h"
   "/home/kaiodt/kaio_ros_ws/devel/include/basics/TimerGoal.h"
+  "/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkResult.h"
+  "/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkActionGoal.h"
+  "/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkFeedback.h"
+  "/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkAction.h"
   "/home/kaiodt/kaio_ros_ws/devel/include/basics/TimerActionGoal.h"
   "/home/kaiodt/kaio_ros_ws/devel/include/basics/TimerResult.h"
   "/home/kaiodt/kaio_ros_ws/devel/include/basics/TimerFeedback.h"
+  "/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkGoal.h"
   "/home/kaiodt/kaio_ros_ws/devel/include/basics/WordCount.h"
 )
 

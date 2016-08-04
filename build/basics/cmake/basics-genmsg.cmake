@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "basics: 8 messages, 1 services")
+message(STATUS "basics: 15 messages, 1 services")
 
 set(MSG_I_FLAGS "-Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg;-Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg;-Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg;-Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg")
 
@@ -26,14 +26,24 @@ add_custom_target(_basics_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "basics" "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerGoal.msg" ""
 )
 
-get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerResult.msg" NAME_WE)
 add_custom_target(_basics_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "basics" "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerActionResult.msg" "actionlib_msgs/GoalStatus:actionlib_msgs/GoalID:std_msgs/Header:basics/TimerResult"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "basics" "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerResult.msg" ""
+)
+
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionResult.msg" NAME_WE)
+add_custom_target(_basics_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "basics" "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionResult.msg" "actionlib_msgs/GoalStatus:actionlib_msgs/GoalID:std_msgs/Header:basics/TalkResult"
 )
 
 get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerAction.msg" NAME_WE)
 add_custom_target(_basics_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "basics" "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerAction.msg" "basics/TimerActionResult:basics/TimerFeedback:basics/TimerActionFeedback:basics/TimerActionGoal:actionlib_msgs/GoalID:std_msgs/Header:actionlib_msgs/GoalStatus:basics/TimerResult:basics/TimerGoal"
+)
+
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionFeedback.msg" NAME_WE)
+add_custom_target(_basics_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "basics" "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionFeedback.msg" "actionlib_msgs/GoalStatus:actionlib_msgs/GoalID:std_msgs/Header:basics/TalkFeedback"
 )
 
 get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerActionFeedback.msg" NAME_WE)
@@ -46,14 +56,39 @@ add_custom_target(_basics_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "basics" "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerActionGoal.msg" "actionlib_msgs/GoalID:std_msgs/Header:basics/TimerGoal"
 )
 
-get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerResult.msg" NAME_WE)
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionGoal.msg" NAME_WE)
 add_custom_target(_basics_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "basics" "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerResult.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "basics" "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionGoal.msg" "basics/TalkGoal:actionlib_msgs/GoalID:std_msgs/Header"
+)
+
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg" NAME_WE)
+add_custom_target(_basics_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "basics" "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg" ""
+)
+
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkAction.msg" NAME_WE)
+add_custom_target(_basics_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "basics" "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkAction.msg" "basics/TalkActionGoal:actionlib_msgs/GoalStatus:actionlib_msgs/GoalID:basics/TalkFeedback:basics/TalkActionFeedback:basics/TalkGoal:std_msgs/Header:basics/TalkResult:basics/TalkActionResult"
+)
+
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg" NAME_WE)
+add_custom_target(_basics_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "basics" "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg" ""
+)
+
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerActionResult.msg" NAME_WE)
+add_custom_target(_basics_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "basics" "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerActionResult.msg" "actionlib_msgs/GoalStatus:actionlib_msgs/GoalID:std_msgs/Header:basics/TimerResult"
 )
 
 get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerFeedback.msg" NAME_WE)
 add_custom_target(_basics_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "basics" "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerFeedback.msg" ""
+)
+
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg" NAME_WE)
+add_custom_target(_basics_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "basics" "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg" ""
 )
 
 get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/src/basics/srv/WordCount.srv" NAME_WE)
@@ -92,9 +127,45 @@ _generate_msg_cpp(basics
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/basics
 )
 _generate_msg_cpp(basics
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/basics
+)
+_generate_msg_cpp(basics
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/basics
+)
+_generate_msg_cpp(basics
   "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerGoal.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/basics
+)
+_generate_msg_cpp(basics
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/basics
+)
+_generate_msg_cpp(basics
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg;/opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/basics
+)
+_generate_msg_cpp(basics
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/basics
+)
+_generate_msg_cpp(basics
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionGoal.msg;/opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg;/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionFeedback.msg;/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg;/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/basics
 )
 _generate_msg_cpp(basics
@@ -111,6 +182,12 @@ _generate_msg_cpp(basics
 )
 _generate_msg_cpp(basics
   "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/basics
+)
+_generate_msg_cpp(basics
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/basics
@@ -140,17 +217,31 @@ get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/src/basics/msg/Comple
 add_dependencies(basics_generate_messages_cpp _basics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerGoal.msg" NAME_WE)
 add_dependencies(basics_generate_messages_cpp _basics_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerResult.msg" NAME_WE)
+add_dependencies(basics_generate_messages_cpp _basics_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionResult.msg" NAME_WE)
 add_dependencies(basics_generate_messages_cpp _basics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerAction.msg" NAME_WE)
+add_dependencies(basics_generate_messages_cpp _basics_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionFeedback.msg" NAME_WE)
 add_dependencies(basics_generate_messages_cpp _basics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerActionFeedback.msg" NAME_WE)
 add_dependencies(basics_generate_messages_cpp _basics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerActionGoal.msg" NAME_WE)
 add_dependencies(basics_generate_messages_cpp _basics_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerResult.msg" NAME_WE)
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionGoal.msg" NAME_WE)
+add_dependencies(basics_generate_messages_cpp _basics_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg" NAME_WE)
+add_dependencies(basics_generate_messages_cpp _basics_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkAction.msg" NAME_WE)
+add_dependencies(basics_generate_messages_cpp _basics_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg" NAME_WE)
+add_dependencies(basics_generate_messages_cpp _basics_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerActionResult.msg" NAME_WE)
 add_dependencies(basics_generate_messages_cpp _basics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerFeedback.msg" NAME_WE)
+add_dependencies(basics_generate_messages_cpp _basics_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg" NAME_WE)
 add_dependencies(basics_generate_messages_cpp _basics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/src/basics/srv/WordCount.srv" NAME_WE)
 add_dependencies(basics_generate_messages_cpp _basics_generate_messages_check_deps_${_filename})
@@ -189,9 +280,45 @@ _generate_msg_eus(basics
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/basics
 )
 _generate_msg_eus(basics
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/basics
+)
+_generate_msg_eus(basics
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/basics
+)
+_generate_msg_eus(basics
   "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerGoal.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/basics
+)
+_generate_msg_eus(basics
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/basics
+)
+_generate_msg_eus(basics
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg;/opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/basics
+)
+_generate_msg_eus(basics
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/basics
+)
+_generate_msg_eus(basics
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionGoal.msg;/opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg;/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionFeedback.msg;/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg;/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/basics
 )
 _generate_msg_eus(basics
@@ -208,6 +335,12 @@ _generate_msg_eus(basics
 )
 _generate_msg_eus(basics
   "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/basics
+)
+_generate_msg_eus(basics
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/basics
@@ -237,17 +370,31 @@ get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/src/basics/msg/Comple
 add_dependencies(basics_generate_messages_eus _basics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerGoal.msg" NAME_WE)
 add_dependencies(basics_generate_messages_eus _basics_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerResult.msg" NAME_WE)
+add_dependencies(basics_generate_messages_eus _basics_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionResult.msg" NAME_WE)
 add_dependencies(basics_generate_messages_eus _basics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerAction.msg" NAME_WE)
+add_dependencies(basics_generate_messages_eus _basics_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionFeedback.msg" NAME_WE)
 add_dependencies(basics_generate_messages_eus _basics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerActionFeedback.msg" NAME_WE)
 add_dependencies(basics_generate_messages_eus _basics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerActionGoal.msg" NAME_WE)
 add_dependencies(basics_generate_messages_eus _basics_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerResult.msg" NAME_WE)
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionGoal.msg" NAME_WE)
+add_dependencies(basics_generate_messages_eus _basics_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg" NAME_WE)
+add_dependencies(basics_generate_messages_eus _basics_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkAction.msg" NAME_WE)
+add_dependencies(basics_generate_messages_eus _basics_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg" NAME_WE)
+add_dependencies(basics_generate_messages_eus _basics_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerActionResult.msg" NAME_WE)
 add_dependencies(basics_generate_messages_eus _basics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerFeedback.msg" NAME_WE)
+add_dependencies(basics_generate_messages_eus _basics_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg" NAME_WE)
 add_dependencies(basics_generate_messages_eus _basics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/src/basics/srv/WordCount.srv" NAME_WE)
 add_dependencies(basics_generate_messages_eus _basics_generate_messages_check_deps_${_filename})
@@ -286,9 +433,45 @@ _generate_msg_lisp(basics
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/basics
 )
 _generate_msg_lisp(basics
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/basics
+)
+_generate_msg_lisp(basics
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/basics
+)
+_generate_msg_lisp(basics
   "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerGoal.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/basics
+)
+_generate_msg_lisp(basics
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/basics
+)
+_generate_msg_lisp(basics
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg;/opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/basics
+)
+_generate_msg_lisp(basics
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/basics
+)
+_generate_msg_lisp(basics
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionGoal.msg;/opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg;/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionFeedback.msg;/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg;/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/basics
 )
 _generate_msg_lisp(basics
@@ -305,6 +488,12 @@ _generate_msg_lisp(basics
 )
 _generate_msg_lisp(basics
   "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/basics
+)
+_generate_msg_lisp(basics
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/basics
@@ -334,17 +523,31 @@ get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/src/basics/msg/Comple
 add_dependencies(basics_generate_messages_lisp _basics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerGoal.msg" NAME_WE)
 add_dependencies(basics_generate_messages_lisp _basics_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerResult.msg" NAME_WE)
+add_dependencies(basics_generate_messages_lisp _basics_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionResult.msg" NAME_WE)
 add_dependencies(basics_generate_messages_lisp _basics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerAction.msg" NAME_WE)
+add_dependencies(basics_generate_messages_lisp _basics_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionFeedback.msg" NAME_WE)
 add_dependencies(basics_generate_messages_lisp _basics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerActionFeedback.msg" NAME_WE)
 add_dependencies(basics_generate_messages_lisp _basics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerActionGoal.msg" NAME_WE)
 add_dependencies(basics_generate_messages_lisp _basics_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerResult.msg" NAME_WE)
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionGoal.msg" NAME_WE)
+add_dependencies(basics_generate_messages_lisp _basics_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg" NAME_WE)
+add_dependencies(basics_generate_messages_lisp _basics_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkAction.msg" NAME_WE)
+add_dependencies(basics_generate_messages_lisp _basics_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg" NAME_WE)
+add_dependencies(basics_generate_messages_lisp _basics_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerActionResult.msg" NAME_WE)
 add_dependencies(basics_generate_messages_lisp _basics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerFeedback.msg" NAME_WE)
+add_dependencies(basics_generate_messages_lisp _basics_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg" NAME_WE)
 add_dependencies(basics_generate_messages_lisp _basics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/src/basics/srv/WordCount.srv" NAME_WE)
 add_dependencies(basics_generate_messages_lisp _basics_generate_messages_check_deps_${_filename})
@@ -383,9 +586,45 @@ _generate_msg_py(basics
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/basics
 )
 _generate_msg_py(basics
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/basics
+)
+_generate_msg_py(basics
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/basics
+)
+_generate_msg_py(basics
   "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerGoal.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/basics
+)
+_generate_msg_py(basics
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/basics
+)
+_generate_msg_py(basics
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg;/opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/basics
+)
+_generate_msg_py(basics
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/basics
+)
+_generate_msg_py(basics
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionGoal.msg;/opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg;/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionFeedback.msg;/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg;/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/basics
 )
 _generate_msg_py(basics
@@ -402,6 +641,12 @@ _generate_msg_py(basics
 )
 _generate_msg_py(basics
   "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/basics
+)
+_generate_msg_py(basics
+  "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/basics
@@ -431,17 +676,31 @@ get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/src/basics/msg/Comple
 add_dependencies(basics_generate_messages_py _basics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerGoal.msg" NAME_WE)
 add_dependencies(basics_generate_messages_py _basics_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerResult.msg" NAME_WE)
+add_dependencies(basics_generate_messages_py _basics_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionResult.msg" NAME_WE)
 add_dependencies(basics_generate_messages_py _basics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerAction.msg" NAME_WE)
+add_dependencies(basics_generate_messages_py _basics_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionFeedback.msg" NAME_WE)
 add_dependencies(basics_generate_messages_py _basics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerActionFeedback.msg" NAME_WE)
 add_dependencies(basics_generate_messages_py _basics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerActionGoal.msg" NAME_WE)
 add_dependencies(basics_generate_messages_py _basics_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerResult.msg" NAME_WE)
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionGoal.msg" NAME_WE)
+add_dependencies(basics_generate_messages_py _basics_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg" NAME_WE)
+add_dependencies(basics_generate_messages_py _basics_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkAction.msg" NAME_WE)
+add_dependencies(basics_generate_messages_py _basics_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg" NAME_WE)
+add_dependencies(basics_generate_messages_py _basics_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerActionResult.msg" NAME_WE)
 add_dependencies(basics_generate_messages_py _basics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerFeedback.msg" NAME_WE)
+add_dependencies(basics_generate_messages_py _basics_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg" NAME_WE)
 add_dependencies(basics_generate_messages_py _basics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kaiodt/kaio_ros_ws/src/basics/srv/WordCount.srv" NAME_WE)
 add_dependencies(basics_generate_messages_py _basics_generate_messages_check_deps_${_filename})

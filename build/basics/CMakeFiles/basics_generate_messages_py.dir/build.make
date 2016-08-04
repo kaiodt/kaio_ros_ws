@@ -49,10 +49,17 @@ basics/CMakeFiles/basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/li
 basics/CMakeFiles/basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerActionFeedback.py
 basics/CMakeFiles/basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerActionResult.py
 basics/CMakeFiles/basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerAction.py
+basics/CMakeFiles/basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkActionFeedback.py
+basics/CMakeFiles/basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkActionResult.py
 basics/CMakeFiles/basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerGoal.py
+basics/CMakeFiles/basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkResult.py
+basics/CMakeFiles/basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkActionGoal.py
+basics/CMakeFiles/basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkFeedback.py
+basics/CMakeFiles/basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkAction.py
 basics/CMakeFiles/basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerActionGoal.py
 basics/CMakeFiles/basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerResult.py
 basics/CMakeFiles/basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerFeedback.py
+basics/CMakeFiles/basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkGoal.py
 basics/CMakeFiles/basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/srv/_WordCount.py
 basics/CMakeFiles/basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/__init__.py
 basics/CMakeFiles/basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/srv/__init__.py
@@ -98,36 +105,98 @@ basics/CMakeFiles/basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/li
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG basics/TimerAction"
 	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerAction.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg
 
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkActionFeedback.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkActionFeedback.py: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionFeedback.msg
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkActionFeedback.py: /opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalStatus.msg
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkActionFeedback.py: /opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkActionFeedback.py: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkActionFeedback.py: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG basics/TalkActionFeedback"
+	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionFeedback.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg
+
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkActionResult.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkActionResult.py: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionResult.msg
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkActionResult.py: /opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalStatus.msg
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkActionResult.py: /opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkActionResult.py: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkActionResult.py: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG basics/TalkActionResult"
+	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionResult.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg
+
 /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerGoal.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
 /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerGoal.py: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerGoal.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG basics/TimerGoal"
 	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerGoal.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg
+
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkResult.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkResult.py: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG basics/TalkResult"
+	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg
+
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkActionGoal.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkActionGoal.py: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionGoal.msg
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkActionGoal.py: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkActionGoal.py: /opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkActionGoal.py: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG basics/TalkActionGoal"
+	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionGoal.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg
+
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkFeedback.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkFeedback.py: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG basics/TalkFeedback"
+	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg
+
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkAction.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkAction.py: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkAction.msg
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkAction.py: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionGoal.msg
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkAction.py: /opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalStatus.msg
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkAction.py: /opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkAction.py: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkAction.py: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionFeedback.msg
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkAction.py: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkAction.py: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkAction.py: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkAction.py: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionResult.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG basics/TalkAction"
+	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkAction.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg
 
 /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerActionGoal.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
 /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerActionGoal.py: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerActionGoal.msg
 /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerActionGoal.py: /opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg
 /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerActionGoal.py: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
 /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerActionGoal.py: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerGoal.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG basics/TimerActionGoal"
 	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerActionGoal.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg
 
 /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerResult.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
 /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerResult.py: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerResult.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG basics/TimerResult"
 	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerResult.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg
 
 /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerFeedback.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
 /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerFeedback.py: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerFeedback.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG basics/TimerFeedback"
 	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerFeedback.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg
 
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkGoal.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkGoal.py: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG basics/TalkGoal"
+	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg
+
 /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/srv/_WordCount.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
 /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/srv/_WordCount.py: /home/kaiodt/kaio_ros_ws/src/basics/srv/WordCount.srv
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV basics/WordCount"
 	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/kaiodt/kaio_ros_ws/src/basics/srv/WordCount.srv -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/srv
 
@@ -136,12 +205,19 @@ basics/CMakeFiles/basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/li
 /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerActionFeedback.py
 /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerActionResult.py
 /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerAction.py
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkActionFeedback.py
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkActionResult.py
 /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerGoal.py
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkResult.py
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkActionGoal.py
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkFeedback.py
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkAction.py
 /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerActionGoal.py
 /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerResult.py
 /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerFeedback.py
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkGoal.py
 /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/srv/_WordCount.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python msg __init__.py for basics"
 	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg --initpy
 
@@ -150,12 +226,19 @@ basics/CMakeFiles/basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/li
 /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/srv/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerActionFeedback.py
 /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/srv/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerActionResult.py
 /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/srv/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerAction.py
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/srv/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkActionFeedback.py
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/srv/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkActionResult.py
 /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/srv/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerGoal.py
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/srv/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkResult.py
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/srv/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkActionGoal.py
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/srv/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkFeedback.py
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/srv/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkAction.py
 /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/srv/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerActionGoal.py
 /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/srv/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerResult.py
 /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/srv/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerFeedback.py
+/home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/srv/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkGoal.py
 /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/srv/__init__.py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/srv/_WordCount.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python srv __init__.py for basics"
 	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/srv --initpy
 
@@ -164,10 +247,17 @@ basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-p
 basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerActionFeedback.py
 basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerActionResult.py
 basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerAction.py
+basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkActionFeedback.py
+basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkActionResult.py
 basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerGoal.py
+basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkResult.py
+basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkActionGoal.py
+basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkFeedback.py
+basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkAction.py
 basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerActionGoal.py
 basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerResult.py
 basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TimerFeedback.py
+basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/_TalkGoal.py
 basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/srv/_WordCount.py
 basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/msg/__init__.py
 basics_generate_messages_py: /home/kaiodt/kaio_ros_ws/devel/lib/python2.7/dist-packages/basics/srv/__init__.py

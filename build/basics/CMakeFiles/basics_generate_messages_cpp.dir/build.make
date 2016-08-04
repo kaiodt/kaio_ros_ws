@@ -49,10 +49,17 @@ basics/CMakeFiles/basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/i
 basics/CMakeFiles/basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/TimerActionFeedback.h
 basics/CMakeFiles/basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/TimerActionResult.h
 basics/CMakeFiles/basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/TimerAction.h
+basics/CMakeFiles/basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/TalkActionFeedback.h
+basics/CMakeFiles/basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/TalkActionResult.h
 basics/CMakeFiles/basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/TimerGoal.h
+basics/CMakeFiles/basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/TalkResult.h
+basics/CMakeFiles/basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/TalkActionGoal.h
+basics/CMakeFiles/basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/TalkFeedback.h
+basics/CMakeFiles/basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/TalkAction.h
 basics/CMakeFiles/basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/TimerActionGoal.h
 basics/CMakeFiles/basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/TimerResult.h
 basics/CMakeFiles/basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/TimerFeedback.h
+basics/CMakeFiles/basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/TalkGoal.h
 basics/CMakeFiles/basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/WordCount.h
 
 /home/kaiodt/kaio_ros_ws/devel/include/basics/Complex.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
@@ -100,12 +107,74 @@ basics/CMakeFiles/basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/i
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from basics/TimerAction.msg"
 	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerAction.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/include/basics -e /opt/ros/indigo/share/gencpp/cmake/..
 
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkActionFeedback.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkActionFeedback.h: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionFeedback.msg
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkActionFeedback.h: /opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalStatus.msg
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkActionFeedback.h: /opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkActionFeedback.h: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkActionFeedback.h: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkActionFeedback.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from basics/TalkActionFeedback.msg"
+	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionFeedback.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/include/basics -e /opt/ros/indigo/share/gencpp/cmake/..
+
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkActionResult.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkActionResult.h: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionResult.msg
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkActionResult.h: /opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalStatus.msg
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkActionResult.h: /opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkActionResult.h: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkActionResult.h: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkActionResult.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from basics/TalkActionResult.msg"
+	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionResult.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/include/basics -e /opt/ros/indigo/share/gencpp/cmake/..
+
 /home/kaiodt/kaio_ros_ws/devel/include/basics/TimerGoal.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
 /home/kaiodt/kaio_ros_ws/devel/include/basics/TimerGoal.h: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerGoal.msg
 /home/kaiodt/kaio_ros_ws/devel/include/basics/TimerGoal.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from basics/TimerGoal.msg"
 	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerGoal.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/include/basics -e /opt/ros/indigo/share/gencpp/cmake/..
+
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkResult.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkResult.h: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkResult.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from basics/TalkResult.msg"
+	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/include/basics -e /opt/ros/indigo/share/gencpp/cmake/..
+
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkActionGoal.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkActionGoal.h: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionGoal.msg
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkActionGoal.h: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkActionGoal.h: /opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkActionGoal.h: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkActionGoal.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from basics/TalkActionGoal.msg"
+	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionGoal.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/include/basics -e /opt/ros/indigo/share/gencpp/cmake/..
+
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkFeedback.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkFeedback.h: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkFeedback.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from basics/TalkFeedback.msg"
+	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/include/basics -e /opt/ros/indigo/share/gencpp/cmake/..
+
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkAction.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkAction.h: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkAction.msg
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkAction.h: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionGoal.msg
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkAction.h: /opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalStatus.msg
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkAction.h: /opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkAction.h: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkAction.h: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionFeedback.msg
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkAction.h: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkAction.h: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkAction.h: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkAction.h: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionResult.msg
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkAction.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from basics/TalkAction.msg"
+	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkAction.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/include/basics -e /opt/ros/indigo/share/gencpp/cmake/..
 
 /home/kaiodt/kaio_ros_ws/devel/include/basics/TimerActionGoal.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
 /home/kaiodt/kaio_ros_ws/devel/include/basics/TimerActionGoal.h: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerActionGoal.msg
@@ -113,29 +182,36 @@ basics/CMakeFiles/basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/i
 /home/kaiodt/kaio_ros_ws/devel/include/basics/TimerActionGoal.h: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
 /home/kaiodt/kaio_ros_ws/devel/include/basics/TimerActionGoal.h: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerGoal.msg
 /home/kaiodt/kaio_ros_ws/devel/include/basics/TimerActionGoal.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from basics/TimerActionGoal.msg"
 	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerActionGoal.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/include/basics -e /opt/ros/indigo/share/gencpp/cmake/..
 
 /home/kaiodt/kaio_ros_ws/devel/include/basics/TimerResult.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
 /home/kaiodt/kaio_ros_ws/devel/include/basics/TimerResult.h: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerResult.msg
 /home/kaiodt/kaio_ros_ws/devel/include/basics/TimerResult.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from basics/TimerResult.msg"
 	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerResult.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/include/basics -e /opt/ros/indigo/share/gencpp/cmake/..
 
 /home/kaiodt/kaio_ros_ws/devel/include/basics/TimerFeedback.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
 /home/kaiodt/kaio_ros_ws/devel/include/basics/TimerFeedback.h: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerFeedback.msg
 /home/kaiodt/kaio_ros_ws/devel/include/basics/TimerFeedback.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from basics/TimerFeedback.msg"
 	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerFeedback.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/include/basics -e /opt/ros/indigo/share/gencpp/cmake/..
+
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkGoal.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkGoal.h: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg
+/home/kaiodt/kaio_ros_ws/devel/include/basics/TalkGoal.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from basics/TalkGoal.msg"
+	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/include/basics -e /opt/ros/indigo/share/gencpp/cmake/..
 
 /home/kaiodt/kaio_ros_ws/devel/include/basics/WordCount.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
 /home/kaiodt/kaio_ros_ws/devel/include/basics/WordCount.h: /home/kaiodt/kaio_ros_ws/src/basics/srv/WordCount.srv
 /home/kaiodt/kaio_ros_ws/devel/include/basics/WordCount.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
 /home/kaiodt/kaio_ros_ws/devel/include/basics/WordCount.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from basics/WordCount.srv"
 	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kaiodt/kaio_ros_ws/src/basics/srv/WordCount.srv -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/include/basics -e /opt/ros/indigo/share/gencpp/cmake/..
 
@@ -144,10 +220,17 @@ basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/Comp
 basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/TimerActionFeedback.h
 basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/TimerActionResult.h
 basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/TimerAction.h
+basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/TalkActionFeedback.h
+basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/TalkActionResult.h
 basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/TimerGoal.h
+basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/TalkResult.h
+basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/TalkActionGoal.h
+basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/TalkFeedback.h
+basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/TalkAction.h
 basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/TimerActionGoal.h
 basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/TimerResult.h
 basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/TimerFeedback.h
+basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/TalkGoal.h
 basics_generate_messages_cpp: /home/kaiodt/kaio_ros_ws/devel/include/basics/WordCount.h
 basics_generate_messages_cpp: basics/CMakeFiles/basics_generate_messages_cpp.dir/build.make
 .PHONY : basics_generate_messages_cpp

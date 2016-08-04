@@ -4,10 +4,17 @@ FILE(REMOVE_RECURSE
   "/home/kaiodt/kaio_ros_ws/devel/share/common-lisp/ros/basics/msg/TimerActionFeedback.lisp"
   "/home/kaiodt/kaio_ros_ws/devel/share/common-lisp/ros/basics/msg/TimerActionResult.lisp"
   "/home/kaiodt/kaio_ros_ws/devel/share/common-lisp/ros/basics/msg/TimerAction.lisp"
+  "/home/kaiodt/kaio_ros_ws/devel/share/common-lisp/ros/basics/msg/TalkActionFeedback.lisp"
+  "/home/kaiodt/kaio_ros_ws/devel/share/common-lisp/ros/basics/msg/TalkActionResult.lisp"
   "/home/kaiodt/kaio_ros_ws/devel/share/common-lisp/ros/basics/msg/TimerGoal.lisp"
+  "/home/kaiodt/kaio_ros_ws/devel/share/common-lisp/ros/basics/msg/TalkResult.lisp"
+  "/home/kaiodt/kaio_ros_ws/devel/share/common-lisp/ros/basics/msg/TalkActionGoal.lisp"
+  "/home/kaiodt/kaio_ros_ws/devel/share/common-lisp/ros/basics/msg/TalkFeedback.lisp"
+  "/home/kaiodt/kaio_ros_ws/devel/share/common-lisp/ros/basics/msg/TalkAction.lisp"
   "/home/kaiodt/kaio_ros_ws/devel/share/common-lisp/ros/basics/msg/TimerActionGoal.lisp"
   "/home/kaiodt/kaio_ros_ws/devel/share/common-lisp/ros/basics/msg/TimerResult.lisp"
   "/home/kaiodt/kaio_ros_ws/devel/share/common-lisp/ros/basics/msg/TimerFeedback.lisp"
+  "/home/kaiodt/kaio_ros_ws/devel/share/common-lisp/ros/basics/msg/TalkGoal.lisp"
   "/home/kaiodt/kaio_ros_ws/devel/share/common-lisp/ros/basics/srv/WordCount.lisp"
 )
 

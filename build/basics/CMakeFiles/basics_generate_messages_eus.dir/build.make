@@ -49,10 +49,17 @@ basics/CMakeFiles/basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/s
 basics/CMakeFiles/basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TimerActionFeedback.l
 basics/CMakeFiles/basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TimerActionResult.l
 basics/CMakeFiles/basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TimerAction.l
+basics/CMakeFiles/basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkActionFeedback.l
+basics/CMakeFiles/basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkActionResult.l
 basics/CMakeFiles/basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TimerGoal.l
+basics/CMakeFiles/basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkResult.l
+basics/CMakeFiles/basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkActionGoal.l
+basics/CMakeFiles/basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkFeedback.l
+basics/CMakeFiles/basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkAction.l
 basics/CMakeFiles/basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TimerActionGoal.l
 basics/CMakeFiles/basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TimerResult.l
 basics/CMakeFiles/basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TimerFeedback.l
+basics/CMakeFiles/basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkGoal.l
 basics/CMakeFiles/basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/srv/WordCount.l
 basics/CMakeFiles/basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/manifest.l
 
@@ -97,41 +104,103 @@ basics/CMakeFiles/basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/s
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating EusLisp code from basics/TimerAction.msg"
 	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerAction.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg
 
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkActionFeedback.l: /opt/ros/indigo/share/geneus/cmake/../../../lib/geneus/gen_eus.py
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkActionFeedback.l: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionFeedback.msg
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkActionFeedback.l: /opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalStatus.msg
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkActionFeedback.l: /opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkActionFeedback.l: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkActionFeedback.l: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating EusLisp code from basics/TalkActionFeedback.msg"
+	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionFeedback.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg
+
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkActionResult.l: /opt/ros/indigo/share/geneus/cmake/../../../lib/geneus/gen_eus.py
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkActionResult.l: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionResult.msg
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkActionResult.l: /opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalStatus.msg
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkActionResult.l: /opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkActionResult.l: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkActionResult.l: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating EusLisp code from basics/TalkActionResult.msg"
+	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionResult.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg
+
 /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TimerGoal.l: /opt/ros/indigo/share/geneus/cmake/../../../lib/geneus/gen_eus.py
 /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TimerGoal.l: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerGoal.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating EusLisp code from basics/TimerGoal.msg"
 	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerGoal.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg
+
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkResult.l: /opt/ros/indigo/share/geneus/cmake/../../../lib/geneus/gen_eus.py
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkResult.l: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating EusLisp code from basics/TalkResult.msg"
+	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg
+
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkActionGoal.l: /opt/ros/indigo/share/geneus/cmake/../../../lib/geneus/gen_eus.py
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkActionGoal.l: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionGoal.msg
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkActionGoal.l: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkActionGoal.l: /opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkActionGoal.l: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating EusLisp code from basics/TalkActionGoal.msg"
+	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionGoal.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg
+
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkFeedback.l: /opt/ros/indigo/share/geneus/cmake/../../../lib/geneus/gen_eus.py
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkFeedback.l: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating EusLisp code from basics/TalkFeedback.msg"
+	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg
+
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkAction.l: /opt/ros/indigo/share/geneus/cmake/../../../lib/geneus/gen_eus.py
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkAction.l: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkAction.msg
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkAction.l: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionGoal.msg
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkAction.l: /opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalStatus.msg
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkAction.l: /opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkAction.l: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkFeedback.msg
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkAction.l: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionFeedback.msg
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkAction.l: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkAction.l: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkAction.l: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkResult.msg
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkAction.l: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkActionResult.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating EusLisp code from basics/TalkAction.msg"
+	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkAction.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg
 
 /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TimerActionGoal.l: /opt/ros/indigo/share/geneus/cmake/../../../lib/geneus/gen_eus.py
 /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TimerActionGoal.l: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerActionGoal.msg
 /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TimerActionGoal.l: /opt/ros/indigo/share/actionlib_msgs/cmake/../msg/GoalID.msg
 /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TimerActionGoal.l: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
 /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TimerActionGoal.l: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerGoal.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating EusLisp code from basics/TimerActionGoal.msg"
 	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerActionGoal.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg
 
 /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TimerResult.l: /opt/ros/indigo/share/geneus/cmake/../../../lib/geneus/gen_eus.py
 /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TimerResult.l: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerResult.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating EusLisp code from basics/TimerResult.msg"
 	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerResult.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg
 
 /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TimerFeedback.l: /opt/ros/indigo/share/geneus/cmake/../../../lib/geneus/gen_eus.py
 /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TimerFeedback.l: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerFeedback.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating EusLisp code from basics/TimerFeedback.msg"
 	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TimerFeedback.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg
 
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkGoal.l: /opt/ros/indigo/share/geneus/cmake/../../../lib/geneus/gen_eus.py
+/home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkGoal.l: /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating EusLisp code from basics/TalkGoal.msg"
+	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/kaiodt/kaio_ros_ws/devel/share/basics/msg/TalkGoal.msg -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg
+
 /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/srv/WordCount.l: /opt/ros/indigo/share/geneus/cmake/../../../lib/geneus/gen_eus.py
 /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/srv/WordCount.l: /home/kaiodt/kaio_ros_ws/src/basics/srv/WordCount.srv
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating EusLisp code from basics/WordCount.srv"
 	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/kaiodt/kaio_ros_ws/src/basics/srv/WordCount.srv -Ibasics:/home/kaiodt/kaio_ros_ws/src/basics/msg -Ibasics:/home/kaiodt/kaio_ros_ws/devel/share/basics/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p basics -o /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/srv
 
 /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/manifest.l: /opt/ros/indigo/share/geneus/cmake/../../../lib/geneus/gen_eus.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kaiodt/kaio_ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating EusLisp manifest code for basics"
 	cd /home/kaiodt/kaio_ros_ws/build/basics && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics basics std_msgs actionlib_msgs
 
@@ -140,10 +209,17 @@ basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/ba
 basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TimerActionFeedback.l
 basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TimerActionResult.l
 basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TimerAction.l
+basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkActionFeedback.l
+basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkActionResult.l
 basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TimerGoal.l
+basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkResult.l
+basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkActionGoal.l
+basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkFeedback.l
+basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkAction.l
 basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TimerActionGoal.l
 basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TimerResult.l
 basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TimerFeedback.l
+basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/msg/TalkGoal.l
 basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/srv/WordCount.l
 basics_generate_messages_eus: /home/kaiodt/kaio_ros_ws/devel/share/roseus/ros/basics/manifest.l
 basics_generate_messages_eus: basics/CMakeFiles/basics_generate_messages_eus.dir/build.make

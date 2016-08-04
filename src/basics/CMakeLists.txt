@@ -62,6 +62,7 @@ add_action_files(
   action
   FILES
   Timer.action
+  Talk.action
 )
 
 ## Generate added messages and services with any dependencies listed here
