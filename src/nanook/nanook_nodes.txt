@@ -1,0 +1,19 @@
+################################################################################################
+Nós - Nanook:
+################################################################################################
+
+1) motor_driver
+	* Descrição:
+		Recebe velocidades para os motores (já em uint8 e nos limites corretos para cada motor)
+		e manda para o driver pela porta serial escolhida 	
+	
+	* Parameters:
+		- motor_driver_port ["/dev/ttyACM0"]
+		- motor_driver_baud_rate [9600]
+
+	* Subscribers:
+		- /left_motor_commands (UInt8)
+		- /right_motor_commands (UInt8)
+
+################################################################################################
+

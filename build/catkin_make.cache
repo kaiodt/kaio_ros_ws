@@ -1,2 +1,2 @@
-basics:cougarbot:cougarbot_moveit_config:followbot:patrolbot:sensor_actuator:stockroom_bot:tortoisebot:wanderbot
+basics:cougarbot:cougarbot_moveit_config:followbot:nanook:patrolbot:sensor_actuator:stockroom_bot:tortoisebot:wanderbot
 -DCATKIN_DEVEL_PREFIX=/home/kaiodt/kaio_ros_ws/devel -DCMAKE_INSTALL_PREFIX=/home/kaiodt/kaio_ros_ws/install -G Unix Makefiles

@@ -1,0 +1,8 @@
+<launch>
+	<!-- Load the URDF model into the parameter server -->
+	<param name="robot_description" textfile="$(find nanook)/nanook.urdf"/>
+
+	<!-- Start the robot_state_publisher node, to publish the joint states -->
+	<node name="robot_state_publisher" pkg="robot_state_publisher"
+		  type="robot_state_publisher"/>
+</launch>

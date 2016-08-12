@@ -263,14 +263,41 @@ basics_BINARY_DIR:STATIC=/home/kaiodt/kaio_ros_ws/build/basics
 //Value Computed by CMake
 basics_SOURCE_DIR:STATIC=/home/kaiodt/kaio_ros_ws/src/basics
 
+//The directory containing a CMake configuration file for bond.
+bond_DIR:PATH=/opt/ros/indigo/share/bond/cmake
+
+//The directory containing a CMake configuration file for bondcpp.
+bondcpp_DIR:PATH=/opt/ros/indigo/share/bondcpp/cmake
+
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/indigo/share/catkin/cmake
+
+//Value Computed by CMake
+chefbot_bringup_BINARY_DIR:STATIC=/home/kaiodt/kaio_ros_ws/build/chefbot/chefbot_bringup
+
+//Value Computed by CMake
+chefbot_bringup_SOURCE_DIR:STATIC=/home/kaiodt/kaio_ros_ws/src/chefbot/chefbot_bringup
+
+//Value Computed by CMake
+chefbot_description_BINARY_DIR:STATIC=/home/kaiodt/kaio_ros_ws/build/chefbot/chefbot_description
+
+//Value Computed by CMake
+chefbot_description_SOURCE_DIR:STATIC=/home/kaiodt/kaio_ros_ws/src/chefbot/chefbot_description
+
+//Value Computed by CMake
+chefbot_gazebo_BINARY_DIR:STATIC=/home/kaiodt/kaio_ros_ws/build/chefbot/chefbot_gazebo
+
+//Value Computed by CMake
+chefbot_gazebo_SOURCE_DIR:STATIC=/home/kaiodt/kaio_ros_ws/src/chefbot/chefbot_gazebo
 
 //Value Computed by CMake
 chessbot_BINARY_DIR:STATIC=/home/kaiodt/kaio_ros_ws/build/chessbot
 
 //Value Computed by CMake
 chessbot_SOURCE_DIR:STATIC=/home/kaiodt/kaio_ros_ws/src/chessbot
+
+//The directory containing a CMake configuration file for class_loader.
+class_loader_DIR:PATH=/opt/ros/indigo/share/class_loader/cmake
 
 //Value Computed by CMake
 cougarbot_BINARY_DIR:STATIC=/home/kaiodt/kaio_ros_ws/build/cougarbot
@@ -286,6 +313,18 @@ cougarbot_moveit_config_SOURCE_DIR:STATIC=/home/kaiodt/kaio_ros_ws/src/cougarbot
 
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/indigo/share/cpp_common/cmake
+
+//The directory containing a CMake configuration file for create_description.
+create_description_DIR:PATH=/opt/ros/indigo/share/create_description/cmake
+
+//The directory containing a CMake configuration file for create_driver.
+create_driver_DIR:PATH=/opt/ros/indigo/share/create_driver/cmake
+
+//The directory containing a CMake configuration file for create_gazebo_plugins.
+create_gazebo_plugins_DIR:PATH=create_gazebo_plugins_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for depthimage_to_laserscan.
+depthimage_to_laserscan_DIR:PATH=/opt/ros/indigo/share/depthimage_to_laserscan/cmake
 
 //The directory containing a CMake configuration file for dynamic_reconfigure.
 dynamic_reconfigure_DIR:PATH=/opt/ros/indigo/share/dynamic_reconfigure/cmake
@@ -345,6 +384,15 @@ gtest_force_shared_crt:BOOL=OFF
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
+//The directory containing a CMake configuration file for image_geometry.
+image_geometry_DIR:PATH=/opt/ros/indigo/share/image_geometry/cmake
+
+//The directory containing a CMake configuration file for image_transport.
+image_transport_DIR:PATH=/opt/ros/indigo/share/image_transport/cmake
+
+//The directory containing a CMake configuration file for kobuki_description.
+kobuki_description_DIR:PATH=/opt/ros/indigo/share/kobuki_description/cmake
+
 //Path to a library.
 lib:FILEPATH=/opt/ros/indigo/lib/libxmlrpcpp.so
 
@@ -361,13 +409,34 @@ message_runtime_DIR:PATH=/opt/ros/indigo/share/message_runtime/cmake
 move_base_msgs_DIR:PATH=/opt/ros/indigo/share/move_base_msgs/cmake
 
 //Value Computed by CMake
+nanook_BINARY_DIR:STATIC=/home/kaiodt/kaio_ros_ws/build/nanook
+
+//Value Computed by CMake
+nanook_SOURCE_DIR:STATIC=/home/kaiodt/kaio_ros_ws/src/nanook
+
+//The directory containing a CMake configuration file for nav_msgs.
+nav_msgs_DIR:PATH=/opt/ros/indigo/share/nav_msgs/cmake
+
+//The directory containing a CMake configuration file for nodelet.
+nodelet_DIR:PATH=/opt/ros/indigo/share/nodelet/cmake
+
+//The directory containing a CMake configuration file for openni_launch.
+openni_launch_DIR:PATH=openni_launch_DIR-NOTFOUND
+
+//Value Computed by CMake
 patrolbot_BINARY_DIR:STATIC=/home/kaiodt/kaio_ros_ws/build/patrolbot
 
 //Value Computed by CMake
 patrolbot_SOURCE_DIR:STATIC=/home/kaiodt/kaio_ros_ws/src/patrolbot
 
+//The directory containing a CMake configuration file for pluginlib.
+pluginlib_DIR:PATH=/opt/ros/indigo/share/pluginlib/cmake
+
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/indigo/share/rosconsole/cmake
+
+//The directory containing a CMake configuration file for rosconsole_bridge.
+rosconsole_bridge_DIR:PATH=/opt/ros/indigo/share/rosconsole_bridge/cmake
 
 //The directory containing a CMake configuration file for roscpp.
 roscpp_DIR:PATH=/opt/ros/indigo/share/roscpp/cmake
@@ -401,6 +470,9 @@ sensor_actuator_SOURCE_DIR:STATIC=/home/kaiodt/kaio_ros_ws/src/sensor_actuator
 
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/indigo/share/sensor_msgs/cmake
+
+//The directory containing a CMake configuration file for smclib.
+smclib_DIR:PATH=/opt/ros/indigo/share/smclib/cmake
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/indigo/share/std_msgs/cmake
@@ -438,11 +510,17 @@ tortoisebot_SOURCE_DIR:STATIC=/home/kaiodt/kaio_ros_ws/src/tortoisebot
 //The directory containing a CMake configuration file for trajectory_msgs.
 trajectory_msgs_DIR:PATH=/opt/ros/indigo/share/trajectory_msgs/cmake
 
+//The directory containing a CMake configuration file for urdf.
+urdf_DIR:PATH=/opt/ros/indigo/share/urdf/cmake
+
 //Value Computed by CMake
 wanderbot_BINARY_DIR:STATIC=/home/kaiodt/kaio_ros_ws/build/wanderbot
 
 //Value Computed by CMake
 wanderbot_SOURCE_DIR:STATIC=/home/kaiodt/kaio_ros_ws/src/wanderbot
+
+//The directory containing a CMake configuration file for xacro.
+xacro_DIR:PATH=/opt/ros/indigo/share/xacro/cmake
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/indigo/share/xmlrpcpp/cmake
@@ -549,7 +627,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=11
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=12
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
