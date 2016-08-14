@@ -2,6 +2,7 @@
 
 import rospy
 import serial
+import time
 from std_msgs.msg import UInt8
 
 
@@ -17,13 +18,14 @@ class MotorDriver:
 		rospy.init_node("motor_driver")
 	
 		# Get parameters
-		self.serial_port = rospy.get_param("~serial_port", "/dev/ttyACM0")
+		self.serial_port = rospy.get_param("~serial_port", "/dev/ttyACM1")
 		self.baud_rate = rospy.get_param("~baud_rate", 9600)
 
 		# Connect to motor driver via serial
 		try:
 			rospy.loginfo("Connecting to motor driver at %s." % self.serial_port)		
 			self.serial_driver = serial.Serial(self.serial_port, self.baud_rate)
+			time.sleep(1)
 		
 		except serial.SerialException:
 			rospy.logerr("Failed to connect to motor driver in port %s." % self.serial_port)
