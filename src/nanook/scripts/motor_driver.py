@@ -18,7 +18,7 @@ class MotorDriver:
 		rospy.init_node("motor_driver")
 	
 		# Get parameters
-		self.serial_port = rospy.get_param("~serial_port", "/dev/ttyACM1")
+		self.serial_port = rospy.get_param("~serial_port", "/dev/ttyACM0")
 		self.baud_rate = rospy.get_param("~baud_rate", 9600)
 
 		# Connect to motor driver via serial

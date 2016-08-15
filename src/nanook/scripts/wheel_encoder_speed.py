@@ -19,7 +19,7 @@ class WheelEncoder:
 
 		# Get parameters
 		self.nodename = rospy.get_name()
-		self.serial_port = rospy.get_param("~serial_port", "/dev/ttyACM0")
+		self.serial_port = rospy.get_param("~serial_port", "/dev/ttyACM1")
 		self.baud_rate = rospy.get_param("~baud_rate", 9600)
 		self.encoder_publish_rate = rospy.get_param("~encoder_publish_rate", 10)
 		self.wheel_diameter = rospy.get_param("~wheel_diameter", 0.1)
@@ -32,7 +32,7 @@ class WheelEncoder:
 		try:
 			rospy.loginfo("Connecting to encoder at %s." % self.serial_port)		
 			self.serial_encoder = serial.Serial(self.serial_port, self.baud_rate)
-			time.sleep(1)
+			time.sleep(2)
 		
 		except serial.SerialException:
 			rospy.logerr("Failed to connect to encoder in port %s." % self.serial_port)
