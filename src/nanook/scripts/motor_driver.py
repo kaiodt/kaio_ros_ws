@@ -25,7 +25,7 @@ class MotorDriver:
 		try:
 			rospy.loginfo("Connecting to motor driver at %s." % self.serial_port)		
 			self.serial_driver = serial.Serial(self.serial_port, self.baud_rate)
-			time.sleep(1)
+			time.sleep(2)
 		
 		except serial.SerialException:
 			rospy.logerr("Failed to connect to motor driver in port %s." % self.serial_port)
