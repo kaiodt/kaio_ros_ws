@@ -19,11 +19,12 @@ class WheelEncoder:
 
 		# Get parameters
 		self.nodename = rospy.get_name()
-		self.serial_port = rospy.get_param("~serial_port", "/dev/ttyACM1")
+		self.serial_port = rospy.get_param("~serial_port", "/dev/ttyUSB2")
 		self.baud_rate = rospy.get_param("~baud_rate", 9600)
-		self.encoder_publish_rate = rospy.get_param("~encoder_publish_rate", 10)
-		self.wheel_diameter = rospy.get_param("~wheel_diameter", 0.1)
-		self.ticks_per_rev = rospy.get_param("~ticks_per_rev", 10)
+		self.encoder_publish_rate = rospy.get_param("~encoder_publish_rate", 100)
+		self.wheel_diameter = rospy.get_param("~wheel_diameter", 0.17)
+		self.ticks_per_rev = rospy.get_param("~ticks_per_rev", 32750)
+		self.speed_adjust = rospy.get_param("~speed_adjust", -0.4055)
 
 		# Publishing rate
 		self.encoder_rate = rospy.Rate(self.encoder_publish_rate)
@@ -46,9 +47,10 @@ class WheelEncoder:
 
 		# Internal variables
 		self.ticks_per_meter = int(self.ticks_per_rev / (pi * self.wheel_diameter))
-		self.encoder_history = [0] * 2	# Store 2 encoder reading values
-		self.speed_history = [0] * 4
-		self.last_time = rospy.Time.now()		
+		self.encoder_history = [0] * 2		# Store 2 encoder reading values
+		self.speed_history = [0] * 4		# Running average filter
+		self.last_time = rospy.Time.now()
+		self.dt_readings = 0 				# Time between encoder readings
 		
 	#############################################################
 	def read_serial(self, bytes):
@@ -66,6 +68,9 @@ class WheelEncoder:
 		
 		del self.encoder_history[0]
 		self.encoder_history.append(reading)
+
+		self.dt_readings = rospy.Time.now() - self.last_time
+		self.last_time = rospy.Time.now()
 
 		return reading
 
@@ -89,10 +94,12 @@ class WheelEncoder:
 	#############################################################
 
 		delta = self.get_encoder_delta() * 1.0
-		dt = rospy.Time.now() - self.last_time
-		self.last_time = rospy.Time.now()
+		#dt = rospy.Time.now() - self.last_time
+		#self.last_time = rospy.Time.now()
 
-		speed = (delta / self.ticks_per_meter) / dt.to_sec()
+		#speed = (delta / self.ticks_per_meter) / self.dt_readings.to_sec()
+		speed = (delta / self.ticks_per_rev) * (60.0 / self.dt_readings.to_sec())	# In RPM
+		speed *= self.speed_adjust
 		del self.speed_history[0]
 		self.speed_history.append(speed)
 
@@ -101,12 +108,8 @@ class WheelEncoder:
 	#############################################################
 	def speed_mean(self, speed_history):
 	#############################################################
-		
-		total = 0
-		for s in speed_history:
-			total = total + s
 
-		return total / len(speed_history)
+		return sum(speed_history) / len(speed_history)
 
 	#############################################################
 	def spin(self):
@@ -117,13 +120,16 @@ class WheelEncoder:
 			encoder_reading = self.read_encoder()
 			speed_reading = self.calc_speed()
 
-			encoder_msg = Int32()
-			encoder_msg.data = encoder_reading
-			self.encoder_pub.publish(encoder_msg)
+			#encoder_msg = Int32()
+			#encoder_msg.data = encoder_reading
+			#self.encoder_pub.publish(encoder_msg)
 
-			speed_msg = Float32()
-			speed_msg.data = speed_reading
-			self.speed_pub.publish(speed_msg)
+			#speed_msg = Float32()
+			#speed_msg.data = speed_reading
+			#self.speed_pub.publish(speed_msg)
+
+			self.encoder_pub.publish(encoder_reading)
+			self.encoder_pub.publish(speed_reading)			
 
 			self.encoder_rate.sleep()
 
